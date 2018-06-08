@@ -19,9 +19,6 @@ if (command === 'add') {
         console.log('---------------------');
         console.log(`Title: ${note.title}`);
         console.log(`Body: ${note.body}`);
-        
-        
-        
     }
 }
 else if (command === 'list') {
@@ -31,6 +28,7 @@ else if (command === 'read') {
     notes.getNote(argv.title);
 }
 else if (command === 'remove') {
+    
     notes.removeNote(argv.title);
 }
 else {

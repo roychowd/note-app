@@ -46,7 +46,12 @@ var getNote = (title) => {
 };
 
 var removeNote = (title) => {
-    console.log("removing ", title);
+    // fetch notes
+    // filter notes removing one with title of argument
+    //to save new notes array
+    var notes = fetchNotes();
+    var findingNote = notes.filter((notes) => notes.title != title)
+
     
 }
 
