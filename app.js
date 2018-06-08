@@ -9,7 +9,7 @@ const notes = require('./notes.js');
 
 const argv = yargs.argv;
 var command = argv._[0];
-
+console.log(argv.title, argv.body);
 
 
 if (command === 'add') {
